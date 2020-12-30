@@ -1,0 +1,129 @@
+/*
+* @Author: Gavin
+* @Date:   2020-12-30 15:14:52
+* @Last Modified by:   Gavin
+* @Last Modified time: 2020-12-30 16:57:05
+*/
+
+
+/* VARIABLES */
+:root {
+    --dark-blue-1: hsl(217, 19%, 35%);
+    --dark-blue-2: hsl(214, 17%, 51%);
+    --gray-blue: hsl(212, 23%, 69%);
+    --light-gray-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Manrope', sans-serif;
+	background-color: var(--light-gray-blue); 
+	height: 100vh;
+	font-size: 1.3rem;
+	position: relative;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.container {
+	height: 30rem;
+	width: 74rem;
+	background-color: white;
+	box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+	border-radius: 1rem;
+	overflow: hidden;
+	display: flex;
+}
+
+.container__image {
+	flex: 0 0 30rem;
+	overflow: hidden;
+	background-image: url(images/drawers.jpg);
+	background-size: cover;
+}	
+
+.container__content {
+	padding: 3.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.container__content h2 {
+	color: var(--dark-blue-1);
+}
+
+.paragraph {
+	color: var(--dark-blue-2);
+}
+
+.container__content-footer {
+	display: flex;
+	align-items: center;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1rem;
+	margin-right: auto;
+}
+
+.container__content-footer img {
+	height: 3.5rem;
+	width: 3.5rem;
+	border-radius: 50%;
+}
+
+.name {
+	font-weight: 700;
+	color: var(--dark-blue-1);
+}
+
+.date {
+	color: var(--dark-blue-2);
+}
+
+.btn {
+/*	background-image: url(images/icon-share.svg);
+	background-repeat: no-repeat;
+	background-size: 1.4rem;
+	background-position: center center;*/
+	border: none;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+.btn:active {
+	background-color: var(--dark-blue-1);
+}
+
+.btn:active img {
+	filter: brightness(0) invert(1);
+}
+
+.btn img {
+	height: 1.4rem;
+	width: 1.4rem;
+}
+
+
