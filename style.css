@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2020-12-30 15:14:52
 * @Last Modified by:   Gavin
-* @Last Modified time: 2020-12-30 16:57:05
+* @Last Modified time: 2020-12-30 18:02:16
 */
 
 
@@ -32,6 +32,8 @@ body {
 	position: relative;
 }
 
+
+/* CONTAINER */
 .center {
 	position: absolute;
 	top: 50%;
@@ -113,17 +115,80 @@ body {
 	cursor: pointer;
 }
 
-.btn:active {
-	background-color: var(--dark-blue-1);
+.btn:focus {
+	background-color: var(--dark-blue-2);
+	outline: none;
 }
 
-.btn:active img {
+.btn:focus img {
 	filter: brightness(0) invert(1);
 }
 
 .btn img {
-	height: 1.4rem;
-	width: 1.4rem;
+	height: auto;
+	width: auto;
+	margin-top: .3rem;
 }
 
 
+@media only screen and (max-width: 50em) {
+	.body {
+		font-size: 1.5rem;
+	}
+
+	.container {
+		flex-direction: column;
+		height: 58rem;
+		width: 38rem;
+	}
+
+	.container__image {
+		flex: 0 0 25rem;
+	}
+
+	.paragraph {
+		margin-top: -1rem;
+	}
+
+	.container__content {
+		padding: 2.8rem;
+		flex: 1;
+		justify-content: space-around;
+	}
+
+	.container__content-footer {
+		margin-bottom: -2rem;
+	}
+}
+
+/* MEDIA QUERY*/
+@media only screen and (max-width: 30em) {
+	.container {
+		height: 50rem;
+		width: 30rem;
+	}
+
+	.container__image {
+		flex: 0 0 20rem;
+	}
+
+	.container__content h2 {
+		margin-top: -1rem;
+	}
+
+	.container__content {
+		padding: 2.2rem;
+	}
+}
+
+
+@media only screen and (max-width: 22em) {
+	.container {
+		height: 50rem;
+		width: 25rem;
+	}
+
+	.container__image {
+		flex: 0 0 17rem;
+	}
+}
