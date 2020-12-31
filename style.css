@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2020-12-30 15:14:52
 * @Last Modified by:   Gavin
-* @Last Modified time: 2020-12-30 22:59:18
+* @Last Modified time: 2020-12-31 00:17:53
 */
 
 
@@ -184,6 +184,13 @@ body {
 }
 
 /* MEDIA QUERY*/
+@media only screen and (orientation: landscape) {
+	body {
+		margin: 15rem;
+	}
+}
+
+
 @media only screen and (max-width: 50em) {
     .body {
         font-size: 1.5rem;
