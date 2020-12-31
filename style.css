@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2020-12-30 15:14:52
 * @Last Modified by:   Gavin
-* @Last Modified time: 2020-12-31 01:35:12
+* @Last Modified time: 2020-12-31 01:55:39
 */
 
 
@@ -186,8 +186,8 @@ body {
 
 @media only screen and (orientation: landscape) and (max-width: 50em) {
 	.center {
-		padding-top: 30rem;
-		padding-bottom: 3rem;
+		height: 100%;
+		margin-top: 3rem;
 	}
 }
 
